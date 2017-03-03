@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color:rgba(166,166,166,0.91)
+}
+.top{
+    width:100%;
+    height:40px;
+    background-color:black;
+}
+.top img{
+    float:left;
+}
+.top ul li{
+    float:right;
+    list-style: none;
+    width:80px;
+    height:40px;
+    line-height:40px;
+}
+.top a{
+    color:white;
+    text-decoration: none;
+    font-size:12px;
+}
+
+.first_paper{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.first_paper p{
+    text-indent:2em;
+}
+.first_paper h3,h5{
+    color:rgba(158,158,158,0.91);
+}
+.first_paper img{
+    padding:10px 0;
+}
+
+.second_paper{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.second_paper p{
+    text-indent:2em;
+}
+.second_paper h3,h5{
+    color:rgba(158,158,158,0.91);
+}
+.second_paper img{
+    margin:10px 0;
+}
+.second_paper li{
+    list-style:none;
+}
+
+.pic{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.pic ul li{
+    width:250px;
+    height:300px;
+    border:1px solid rgba(158,158,158,0.91);
+    margin:30px;
+    list-style:none;
+}
+.pic li p{
+    text-align: center;
+    line-height:2em;
+}
+
+.last_paper{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.last_paper h3,h5{
+    color:rgba(158,158,158,0.91);
+}
+.last_paper ol{
+    padding:20px 40px;
+}
+.last_paper table{
+    width:100%;
+}
+.last_paper table th{
+    background-color:black;
+    color:white;
+    text-align: left;
+}
+.last_paper table tfoot{
+    background-color:rgba(158,158,158,0.91);
+}
+
+.sider{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.sider h3{
+    border-left:3px solid rgba(158,158,158,0.91);
+}
+.sider h3,h5{
+    text-indent: 10px;
+}
+.sider form{
+    margin-left:250px;
+}
+.mail_format{
+    margin-left:10em;
+    color:rgba(158,158,158,0.91);
+    font-size:12px;
+}
+.pass_text{
+    margin-left:2em;
+}
+.sex_text,.city_sel,.hooby{
+    margin-left:5em;
+}
+.person_text{
+    margin-left:3em;
+    float:left;
+    padding-right:0.5em;
+}
+
+#sub{
+    width:100%;
+    background-color:cornflowerblue;
+    border-radius:10px;
+    height:25px;
+}
+
+.footer{
+    background:black;
+    text-align: center;
+    color:white;
+    height:40px;
+    line-height:40px;
+}
+
