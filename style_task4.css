@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+}
+.main{
+    width:400px;
+    height:200px;
+    background-color: rgba(196,196,196,0.91);
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:-100px 0 0 -200px;
+}
+.left_up{
+    border-radius:0 0 50px 0;
+    background-color:yellow;
+    width:50px;
+    height:50px;
+}
+.right_down{
+    border-radius:50px 0 0 0;
+    background-color:yellow;
+    width:50px;
+    height:50px;
+    position:absolute;
+    bottom:0;
+    right:0;
+}

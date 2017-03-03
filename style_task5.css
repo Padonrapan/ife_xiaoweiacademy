@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0
+}
+body{
+    background-color:rgba(166,166,166,0.91);
+    font-size:12px;
+}
+.top{
+    width:100%;
+    height:40px;
+    background-color:black;
+}
+.top img{
+    float:left;
+}
+.top ul li{
+    float:right;
+    list-style: none;
+    width:80px;
+    height:40px;
+    line-height:40px;
+}
+.top a{
+    color:white;
+    text-decoration: none;
+    font-size:12px;
+}
+
+
+
+.first_paper{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.first_paper p{
+    text-indent:2em;
+}
+.first_paper h3,h5{
+    color:rgba(158,158,158,0.91);
+}
+.first_paper img{
+    padding:10px 0;
+}
+
+.second_paper{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.second_paper p{
+    text-indent:2em;
+}
+.second_paper h3,h5{
+    color:rgba(158,158,158,0.91);
+}
+.second_paper img{
+    margin:10px 0;
+}
+.second_paper li{
+    list-style:none;
+}
+
+.pic{
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    border:2px solid rgba(138,138,138,0.93);
+    overflow:hidden;
+}
+.pic ul li{
+    width:250px;
+    height:300px;
+    border:1px solid rgba(158,158,158,0.91);
+    margin:30px;
+    list-style:none;
+    float:left;
+}
+.pic li p{
+    text-align: center;
+    line-height:2em;
+}
+
+.last_paper{
+    overflow:hidden;
+    margin:20px;
+    background-color:white;
+    padding:20px;
+    line-height:2em;
+    border:2px solid rgba(138,138,138,0.93);
+}
+.last_paper h3,h5{
+    color:rgba(158,158,158,0.91);
+}
+.last_paper ol{
+    padding:20px 40px;
+}
+.last_paper table{
+    width:100%;
+}
+.last_paper table th{
+    background-color:black;
+    color:white;
+    text-align: left;
+}
+.last_paper table tfoot{
+    background-color:rgba(158,158,158,0.91);
+}
+
+.footer{
+    background:black;
+    text-align: center;
+    color:white;
+    height:40px;
+    line-height:40px;
+}
+
+
+.main_left{
+    margin-right:340px;
+}
+.sider_right{
+    width:280px;
+    background-color: white;
+    position:absolute;
+    right:20px;
+    top:60px;
+    line-height:3em;
+    padding:20px;
+}
+.sider h3{
+    border-left:3px solid rgba(196,196,196,0.91);
+    text-indent: 1em;
+    margin-bottom:20px;
+}
+
+#sub{
+    margin:10px 10px 10px 0;
+    width:100%;
+    background-color:rgba(59,225,222,0.91);
+    border:1px solid rgba(59,225,222,0.91);
+    line-height:2em;
+    border-radius: 15px;
+    color:white;
+}
+
+#format{
+    position:absolute;
+    right:210px;
+}
+#input{
+    width:120px;
+    font-size:12px;
+
+}
+#input,textarea,#sex,select,#hobby{
+    margin-left:100px;
+}
+#right_indent{
+    padding-left:100px
+}
+
+
+

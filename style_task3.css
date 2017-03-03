@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+
+}
+.wrap{
+    margin:20px;
+    background-color: rgba(196,196,196,0.91);
+    overflow:hidden;
+}
+
+.left{
+    float:left;
+    width:200px;
+    background-color:white;
+    margin:20px;
+}
+.right{
+    float:right;
+    background-color:white;
+    width:120px;
+    margin:20px;
+}
+.middle{
+    background-color:white;
+    margin:20px 160px 20px 240px;
+}
+.left img{
+    float:left;
+    margin:20px;
+}
+.left p{
+    margin-top:20px;
+}
+.right img{
+    margin:10px 20px;
+}
+.middle{
+    line-height:2em;
+}
+.middle p{
+    padding:20px;
+}
