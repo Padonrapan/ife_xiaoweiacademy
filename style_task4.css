@@ -2,9 +2,7 @@
     margin:0;
     padding:0;
 }
-body{
-    display:flex;
-}
+
 .main{
     width:400px;
     height:200px;
