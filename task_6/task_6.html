@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task_6</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:rgb(143,143,143);
+            margin:0;
+            padding:0;
+
+        }
+            .wrap{
+                background-color:white;
+                width:980px;
+                height:1386px;
+                margin:40px auto;
+                position:relative;
+            }
+
+                .top{
+                    width:892px;
+                    height:61px;
+                    border-bottom:2px solid #938e8c;
+                    margin:0 44px;
+                    position:relative;
+                }
+                    .top_left{
+                        width:110px;
+                        height:61px;
+                        background-color:rgb(235,92,93);
+                        position:absolute;
+                    }
+                        .top_left p{
+                            position:absolute;
+                            bottom:0;
+                            left:2px;
+                            font-size:12px;
+                            color:#ffffff;
+                            font-family: "Adobe 黑体 Std R";
+                        }
+                    #top_right{
+                        position:absolute;
+                        bottom:0;
+                        right:0;
+                        font-size:12px;
+                        color:#d45d5c;
+                        font-family: "Adobe 黑体 Std R";
+                    }
+
+                .first_layout_left{
+                    position:absolute;
+                    width:641px;
+                    height:301px;
+                    left:44px;
+                    top:85px;
+                }
+                .first_layout_left img{
+                    position:absolute;
+                }
+                .background_left{
+                    width:191px;
+                    height:301px;
+                    filter: alpha(opacity=40);
+                    background-color: rgb(151,196,175);
+                    background-color: rgba(151,196,175,0.4);
+                    position:absolute;
+                }
+
+                .background_right{
+                    width:191px;
+                    height:301px;
+                    filter: alpha(opacity=40);
+                    background-color:rgb(235,92,93);
+                    background-color: rgba(235,92,93,0.4);
+                    position:absolute;
+                    right:0;
+                }
+                .first_layout_right{
+                    position:absolute;
+                    right:44px;
+                    top:85px;
+                    width:203px;
+                    height:299px;
+                    border-top:2px solid #cc809c;
+                }
+                #about,#technology{
+                    font-size:16px;
+                    color:#000000;
+                    font-family: 微软雅黑;
+                    line-height:30px;
+                    text-decoration: underline;
+                }
+
+                #abte{
+                    font-size:12px;
+                    color:#676767;
+                    font-family: "Adobe 楷体 Std R";
+                    line-height:12px;
+                }
+                #num{
+                    font-size:116px;
+                    color:#75b86b;
+                    font-family: 微软雅黑;
+                    font-style:italic;
+                }
+                .numstr{
+                    position:relative;
+                    width:203px;
+                    height:60px;
+                }
+                .numstr span{
+                    font-size:55px;
+                    color:#cc8091;
+                    float:left;
+                }
+                .numstr_right{
+                    font-size:21px;
+                    position:absolute;
+                    bottom:0;
+                    left:80px;
+                    color:#cc8091
+                }
+                #large{
+                    font-size:21px;
+                }
+                #small{
+                    font-size:12px;
+                }
+
+        .second_layout{
+            width:641px;
+            position:absolute;
+            top:420px;
+            left:44px;
+            font-size:12px;
+            color:#231815;
+            line-height:16px;
+            font-family: 微软雅黑;
+            opacity:0.7;
+        }
+        .second_layout_left{
+            width:232px;
+            position:absolute;
+        }
+        .second_layout_middle{
+            width:174px;
+            position:absolute;
+            left:260px;
+        }
+        .second_layout_right{
+            width:174px;
+            position:absolute;
+            right:0;
+        }
+        #what,#when,#how{
+            text-decoration: underline;
+            font-size:16px;
+            font-weight: bold;
+            padding-bottom:5px;
+        }
+        #what{
+            color:rgb(87,212,180);
+        }
+        #when{
+            color:rgb(216,205,28);
+        }
+        #how{
+            color:rgb(235,92,93);
+        }
+        .second_layout_right span{
+            color:rgb(235,92,93);
+        }
+        .last_layout{
+            width:892px;
+            height:700px;
+            position:absolute;
+            bottom:60px;
+            left:44px;
+            border-bottom:1px solid #398e8c;
+        }
+        .last_layout_left{
+            width:415px;
+            position:absolute;
+            left:0;
+        }
+        .last_layout_left_title{
+            border-bottom:2px solid #114568;
+            font-weight:bold;
+            font-family: "Adobe 黑体 Std R";
+            color:#11456b;
+        }
+        #front_english{
+            font-size:30px;
+        }
+        #front_chinese{
+            font-size:24px;
+            padding-bottom:5px;
+        }
+        .last_layout_left_title span{
+            padding-right:10px;
+            font-size:60px;
+            color:#f5e327;
+            font-style:italic;
+        }
+
+        .last_layout_right{
+            width:460px;
+            position:absolute;
+            right:0;
+        }
+        .last_layout_left_content{
+            font-size:12px;
+            color:#767777;
+            font-family: "Adobe 宋体 Std L";
+            line-height:1.5em;
+            position:relative;
+            top:20px;
+        }
+        .last_layout_left_content span{
+            font-size:70px;
+            color:#f5e327;
+            font-family: 微软雅黑;
+            float:left;
+            padding:20px 10px 20px 0;
+        }
+        .last_layout_left_content img{
+            float:right;
+            padding:10px 5px 5px 10px;
+        }
+
+        #background_front{
+            position:relative;
+            width:458px;
+            height:61px;
+            background-color:rgba(66,32,8,0.4);
+            top:-65px;
+        }
+        #background_front p{
+            height:44px;
+            border-left:3px solid #72b16a;
+            font-size:26px;
+            padding-left:10px;
+            position:relative;
+            top:8px;
+            left:30px;
+            color:#ffffff;
+            font-family: 微软雅黑;
+        }
+        #background_front span{
+            font-size:12px;
+            font-style:italic;
+            color:#72b16a;
+            padding-left:10px;
+        }
+        .last_layout_right_bottom{
+            width:459px;
+            height:318px;
+            background-color:rgba(196,180,144,0.4);
+            padding-top:5px;
+        }
+        .last_layout_right_bottom p{
+            font-size:16px;
+            color:#5a5b5b;
+            line-height:20px;
+            margin:24px;
+            padding-left:25px;
+            font-family: 微软雅黑;
+        }
+        #num_english{
+            width:260px;
+            height:160px;
+            background-color:rgb(235,92,93);
+            margin-right:15px;
+            float:left;
+        }
+        .num_english_left{
+            height:86px;
+            width:60px;
+            border-right:2px solid #ffffff;
+            float:left;
+            margin-top:34px;
+            font-size:80px;
+            color:#ffffff;
+            padding-left:20px;
+            margin-right:10px;
+        }
+        .num_english_right{
+            height:86px;
+            margin-top:34px;
+        }
+        .num_english_right p{
+            color:#ffffff;
+            font-size:12px;
+            margin:6px;
+            font-style: italic;
+        }
+        #ONE{
+            font-size:18px;
+        }
+        #hello_world{
+            font-size:14px;
+            font-style: italic;
+            color:#5a5b5b;
+        }
+        .footer{
+            height:60px;
+            width:892px;
+            left:44px;
+            bottom:0;
+            position:absolute;
+        }
+        .footer p{
+            position:absolute;
+            top:0;
+            right:0;
+            font-size:12px;
+            color:#d45d5c;
+            font-family: 黑体;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <div class="top_left"><p>ife.baidu.com</p></div>
+            <p id="top_right">2017.03</p>
+        </div><!--"top"end-->
+
+
+            <div class="first_layout_left">
+                <img src="task_6_images/task_6_1.png"/>
+                <div class="background_left"></div>
+                <div class="background_right"></div>
+            </div><!--"first_layout_left"end-->
+            <div class="first_layout_right">
+                <p id="about"><span>A</span>BOUT</p>
+                <p id="technology"><span>T</span>ECHNOLOGY</p>
+                <p id="abte">about technology about technology about technology</p>
+                <p id="num">700</p>
+                <div class="numstr">
+                    <span>3.2</span>
+                    <div class="numstr_right">
+                        <p id="large">css</p>
+                        <p id="small">csscsscss</p>
+                    </div>
+                </div>
+            </div><!--"first_layout_right"end-->
+
+        <div class="second_layout">
+            <div class="second_layout_left">
+                <p id="what">What</p>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                    端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                    端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端</p>
+            </div>
+            <div class="second_layout_middle">
+                <p id="when">When</p>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                    端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                    前端前端前端前端前端前端前端前端前端前端前端</p>
+            </div>
+            <div class="second_layout_right">
+                <p id="how">How</p>
+                <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                    端前端前端前端</p>
+                <p>what---------<span>40%</span></p>
+                <p>when---------<span>30%</span></p>
+                <p>how----------<span>30%</span></p>
+            </div>
+        </div><!--"second_layout"end-->
+
+        <div class="last_layout">
+            <div class="last_layout_left">
+                <div class="last_layout_left_title">
+                    <p id="front_english"><span>THE</span>TECHNOLOGY OF FRONT</p>
+                    <P id="front_chinese"> 前端技术领域</P>
+                </div>
+                <div class="last_layout_left_content">
+                    <p><span>前</span>端前端前端前端前端前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端<img src="task_6_images/task_6_3.png"/>
+                        前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                    <p>端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                    前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+                    <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                        端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                        端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                        前端前端前端前端前端前端前端前端前端前端前端</p>
+                    <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                        端
+                       </p>
+                </div>
+            </div><!--"last_layout_left"end-->
+
+            <div class="last_layout_right">
+                <img src="task_6_images/task_6_2.png"/>
+                <div id="background_front">
+                    <p>前端技术<span>前端技术前端技术</span></p>
+                </div>
+                <div class="last_layout_right_bottom">
+
+                        <p>前端前端前端前端前端前端..............................前端</p>
+                        <p>前端前端前端.....................................................端前端</p>
+                        <p>前端前端前端前端前端前端..............................前端</p>
+                        <div id="num_english">
+                            <div class="num_english_left">0</div>
+                            <div class="num_english_right">
+                                <p id="ONE">ONE TWO</p>
+                                <p id="ONE">THREE FOUR FIVE</p>
+                                <p>hello world hello world hello world</p>
+                            </div>
+                        </div>
+                        <p id="hello_world">"world hello world hello world hello world hello world hello world hello
+                            world hello world hello world hello world hello world"</p>
+                </div>
+            </div><!--"last_layout_right"end-->
+        </div><!--"last_layout"end-->
+
+        <div  class="footer"><p>ife.baidu.com</p></div><!--"footer"end-->
+    </div>
+</body>
+</html>
