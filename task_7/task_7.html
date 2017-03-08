@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task_7</title>
+    <style type="text/css">
+        body{
+            padding:0;
+            margin:0;
+            background-color: rgb(196,196,196);
+        }
+
+        .wrap{
+            min-width:800px;
+            margin:0 auto;
+            width:1280px;
+            background-color: #ffffff;
+        }
+        .top{
+            height:60px;
+            position:relative;
+        }
+        .top img{
+            margin:15px 15px 15px 60px;
+            float:left;
+        }
+        .top span{
+            height:30px;
+            position:absolute;
+            top:15px;
+            left:103px;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .top ul,.top li{
+            padding:0;
+            margin:0;
+        }
+        .top li{
+            float:right;
+            width:120px;
+            list-style:none;
+            height:60px;
+            line-height:60px;
+        }
+        .top li a{
+            text-decoration: none;
+            color:#000000;
+        }
+        .top li a:hover{
+            color:rgb(235,92,93);
+            border-bottom:2px solid rgb(235,92,93);
+        }
+        .top li img{
+            float:left;
+            padding:0;
+            margin:21.5px 5px 21.5px 0;
+        }
+        .begin{
+            position:relative;
+            height:695px;
+            background-image: url("task_7_images/task_7_3.png");
+            color:#ffffff;
+        }
+        .begin h1,.begin h2,.begin h3{
+            position:absolute;
+            left:150px;
+        }
+        .begin h1{
+            top:230px;
+            font-size:56px;
+        }
+        .begin h2{
+            top:340px;
+        }
+        .begin h3{
+            top:480px;
+            font-size:40px;
+            width:250px;
+            height:50px;
+            background-color: rgb(235,92,93);
+            text-align: center;
+            line-height:50px;
+        }
+        .begin h3 a{
+            color:#ffffff;
+            text-decoration: none;
+        }
+        .navigation{
+            height:250px;
+            position:relative;
+        }
+        .navigation ul,navigation_logo li{
+            padding:0;
+            margin:0;
+        }
+        #navigation_logo li{
+            width:320px;
+            float:left;
+            text-align: center;
+            list-style: none;
+            margin-top:60px;
+        }
+        #navigation_cont li{
+            list-style: none;
+            float:left;
+            width:178px;
+            padding:10px 70px;
+            text-align: center;
+            border-left:2px solid rgb(196,196,196);
+            margin-top:50px
+        }
+        .what{
+            height:360px;
+            background-color:rgb(227,227,227);
+            text-align: center;
+            font-size:40px;
+            color:rgb(138,138,138);
+            font-weight:bold;
+        }
+        .what img{
+            margin:90px 594.5px 0 594.5px;
+        }
+
+        .map{
+            height:341px;
+            background-image:url("task_7_images/task_7_9.png");
+            position:relative;
+            text-align: center;
+        }
+        .map p,.map h3{
+            padding:0;
+            margin:0;
+            color:#ffffff;
+        }
+        .map h3{
+            padding-top:60px;
+            font-size:24px;
+        }
+        .map p{
+            padding-top:20px;
+            font-size:12px;
+        }
+        .map select,.search{
+            width:240px;
+            height:35px;
+            font-size:16px;
+            position:absolute;
+            top:180px;
+        }
+        #country{
+            left:120px;
+        }
+        #improvince{
+            left:385px;
+        }
+        #city{
+            right:385px;
+        }
+        .search{
+            background-color: rgb(235,92,93);
+            position:absolute;
+            right:120px;
+            line-height:35px;
+            letter-spacing:10px;
+            font-size:18px;
+        }
+        .activity{
+            height:600px;
+            background-image:url("task_7_images/task_7_11.png");
+            position:relative;
+            font-size:16px;
+            text-align: center;
+        }
+        .activity p{
+            color:rgb(138,138,138);
+        }
+        .activity h3,.activity h4,.activity p{
+            padding:0;
+            margin:0;
+        }
+        .activity img{
+            margin:100px 155px;
+        }
+        .shanghai,.beijing,.shenzhen,.hongkong{
+            position:absolute;
+        }
+        .shanghai{
+            top:80px;
+            left:415px;
+        }
+        .shanghai h3{
+            letter-spacing:25px;
+            font-size:28px;
+        }
+        .shanghai p{
+            margin:0;
+            text-indent: -1.5em;
+        }
+        .beijing{
+            bottom:130px;
+            left:200px;
+        }
+        .shenzhen{
+            bottom:130px;
+            right:430px;
+        }
+        .hongkong{
+            bottom:130px;
+            right:200px;
+        }
+        .xinshijie_beijing{
+            height:560px;
+            width:1280px;
+            background-image: url("task_7_images/task_7_10.png");
+            background-repeat: no-repeat;
+            text-align: center;
+            position:relative;
+        }
+
+       .xinshijie_beijing p,.xinshijie_beijing h1,.xinshijie_beijing h2,
+       .xinshijie_beijing h3,.xinshijie_beijing a{
+            padding:0;
+            margin:0;
+            position:absolute;
+        }
+        .xinshijie_beijing_left{
+            color:#ffffff;
+            text-align: center;
+        }
+        .xinshijie_beijing_left h2{
+            width:200px;
+            top:160px;
+            left:325px;
+            font-size:48px;
+        }
+        .xinshijie_beijing_left h1{
+            width:400px;
+            top:205px;
+            left:225px;
+            font-size:90px;
+        }
+        .xinshijie_beijing_left p,.xinshijie_beijing_left h3{
+            width:200px;
+            font-size:24px;
+            left:325px;
+
+        }
+        .xinshijie_beijing_left h3{
+            top:320px;
+        }
+        .xinshijie_beijing_left p{
+            top:365px;
+        }
+        .xinshijie_beijing_right{
+            text-align: center;
+        }
+        .xinshijie_beijing_right h3{
+            width:130px;
+            top:180px;
+            right:150px;
+            font-size:24px;
+        }
+        .xinshijie_beijing_right span{
+            color:rgb(235,92,93);
+        }
+        .xinshijie_beijing_right p{
+            width:300px;
+            right:65px;
+            top:230px;
+            line-height:1.5em;
+            color:rgb(158,158,158);
+            text-align: left;
+        }
+        .xinshijie_beijing_right a{
+            color:rgb(235,92,93);
+            width:128px;
+            right:150px;
+            border:2px solid rgb(235,92,93);
+            top:390px;
+            font-size:20px;
+            text-decoration: none;
+        }
+        .about_us{
+            height:521px;
+            position:relative;
+            width:1280px;
+            text-align: center;
+            font-size:24px;
+        }
+        .left,.middle,.right{
+            position:absolute;
+            height:521px;
+        }
+        .left{
+            width:426px;
+            background-image: url("task_7_images/task_7_13.png");
+            left:0;
+            color:#ffffff;
+        }
+        .middle{
+            width:426px;
+            background-image: url("task_7_images/task_7_14.png");
+            left:426px;
+        }
+        .right{
+            width:430px;
+            background-image: url("task_7_images/task_7_15.png");
+            right:0;
+        }
+        .left h4,.middle h4,.left p,.middle p,.left a,.middle a{
+            position:absolute;
+            left:96px;
+            width:224px;
+            height:40px;
+        }
+        .left h4,.middle h4{
+            top:160px;
+            font-weight: normal;
+        }
+        .left p,.middle p{
+            top:210px;
+        }
+        .left a,.middle a{
+            border:2px solid coral;
+            line-height:40px;
+            top:300px;
+        }
+        .middle a{
+            color:coral;
+        }
+        .being_us{
+            height:750px;
+            overflow:hidden;
+        }
+        .being_us_top{
+            text-align: center;
+            padding-top:60px;
+        }
+        .being_us_top h3{
+            font-size:24px;
+        }
+        .being_us_top p{
+            color:rgb(167,167,167);
+            padding:0;
+            margin:0;
+        }
+        .being_us_left{
+            float:left;
+            width:300px;
+            padding:60px 60px 0 150px;
+        }
+        .being_us_left ul,.being_us_left li{
+            padding:0;
+            margin:0;
+        }
+        .being_us_left li{
+            list-style:none;
+
+        }
+        .being_us_left li p{
+            color:rgb(166,166,166);
+            line-height:1.5em;
+            font-size:12px;
+        }
+        .being_us_left li a{
+            text-decoration:none;
+            color:rgb(166,166,166);
+            padding-left:228px;
+        }
+        .being_us_right{
+            padding:70px 150px 0 0;
+            width:600px;
+            float:right;
+        }
+        .being_us_right input{
+            width:270px;
+            height:40px;
+            margin:10px;
+        }
+        .being_us_right textarea{
+            width:560px;
+            margin:10px;
+            height:150px;
+        }
+        #submit{
+            width:560px;
+        }
+        .contect{
+            background-image: url("task_7_images/task_7_17.png");
+            height:361px;
+            color:#ffffff;
+        }
+        .contect h3,.contect p{
+            margin:0 340px;
+            width:600px;
+            text-align: center;
+        }
+        .contect h3{
+            padding-top:100px;
+        }
+        .contect p{
+            padding:10px 0 30px 0;
+            font-size:12px;
+            line-height:1.5em;
+        }
+        .contect input{
+            width:530px;
+            height:40px;
+            margin-left:340px;
+            margin-right:0;
+        }
+        #contect_submit{
+            width:60px;
+            height:42px;
+            margin-left:0;
+            margin-right:340px;
+        }
+        .contect img{
+            margin:20px 538.5px;
+        }
+        .footer{
+            height:58px;
+            background-image: url("task_7_images/task_7_18.png");
+            color:#ffffff;
+        }
+        #year,#toTop{
+            height:58px;
+            line-height:58px;
+        }
+        #year{
+            width:100px;
+            padding-left:100px;
+        }
+        #toTop{
+            padding-left:900px;
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <div class="top">
+        <img src="task_7_images/task_7_1.png"/>
+        <span>新世界</span>
+        <ul>
+            <li><a href="ife.baidu.com"><img src="task_7_images/task_7_2.png"/>登录</a></li>
+            <li><a href="ife.baidu.com">关于我们</a></li>
+            <li><a href="ife.baidu.com">爱心社区</a></li>
+            <li><a href="ife.baidu.com">项目介绍</a></li>
+            <li><a href="ife.baidu.com">最新活动</a></li>
+            <li><a href="ife.baidu.com">首页</a></li>
+        </ul>
+
+    </div><!--"top"end-->
+
+    <div class="begin">
+        <h1>Time of new life</h1>
+        <h2>新时代,年轻的人们让我们一起<p>体验新生活,享受新生活</p></h2>
+        <h3><a href="ife.baidu.com">开始体验</a></h3>
+    </div><!--"begin"end-->
+
+    <div class="navigation">
+        <ul id="navigation_logo">
+            <li><img src="task_7_images/task_7_4.png"/></li>
+            <li><img src="task_7_images/task_7_5.png"/></li>
+            <li><img src="task_7_images/task_7_6.png"/></li>
+            <li><img src="task_7_images/task_7_7.png"/></li>
+        </ul>
+        <ul id="navigation_cont">
+            <li>打造全新世界观,让你更爱你的生活</li>
+            <li>丰富多产的公益活动,发挥新世界的主人翁意识</li>
+            <li>时尚的新理念,超前体验为止的生活</li>
+            <li>完善的培训机制,培养全新的世界观</li>
+        </ul>
+    </div><!--"navigation"end-->
+
+    <div class="what">
+        <img src="task_7_images/task_7_8.png"/>
+        <p>关于新世界,你不知道的还有什么？</p>
+    </div><!--"what"end-->
+
+    <div class="map">
+        <h3>查找新世界城市活动信息</h3>
+        <p>每个城市都有不同的活动信息,请自主查询您所需要了解的城市</p>
+        <select  id="country">
+            <option>中国</option>
+        </select>
+        <select  id="improvince">
+            <option>北京</option>
+            <option>天津</option>
+            <option>河北省</option>
+            <option>陕西省</option>
+            <option>内蒙古自治区</option>
+            <option selected>辽宁省</option>
+        </select>
+        <select id="city">
+            <option>城市</option>
+        </select>
+        <div class="search">搜索</div>
+    </div><!--"map"end-->
+
+    <div class="activity">
+        <img src="task_7_images/task_7_12.png"/>
+        <div class="shanghai">
+            <h3>上海活动</h3>
+            <p>夜上海新景观探索</p>
+        </div>
+        <div class="beijing">
+            <h4>北京活动</h4>
+            <p>新社区大联盟</p>
+        </div>
+        <div class="shenzhen">
+            <h4>深圳活动</h4>
+            <p>全新海岸线观点站</p>
+        </div>
+        <div class="hongkong">
+            <h4>香港活动</h4>
+            <p>奢侈消费大派送</p>
+        </div>
+    </div><!--"activity"end-->
+
+
+    <div class="xinshijie_beijing">
+        <div class="xinshijie_beijing_left">
+            <h2>新世界</h2>
+            <h1>TIME</h1>
+            <h3>@新世界-北京</h3>
+            <p>2017.03.07</p>
+        </div>
+        <div class="xinshijie_beijing_right">
+            <h3>新世界/<span>01</span></h3>
+            <p>新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界
+                新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界
+                新世界是个新世界</p>
+            <a href="ife.baidu.com">查看更多</a>
+        </div>
+    </div><!--"beijing"end-->
+
+    <div class="about_us">
+        <div class="left">
+            <h4>新时代</h4>
+            <p>关于爱生活的我们</p>
+            <a>查看更多</a>
+        </div>
+        <div class="middle">
+            <h4>新时代</h4>
+            <p>关于爱生活的我们</p>
+            <a>查看更多</a>
+        </div>
+        <div class="right"></div>
+    </div><!--"about_us"end-->
+
+
+    <div class="being_us">
+        <div class="being_us_top">
+            <h3>成为我们的志愿者</h3>
+            <p>新世界的家庭需要每一个热爱生活的人加入,如果你够年轻,有梦想,有激情</p>
+            <p>那就不要犹豫,快来加入我们</p>
+        </div>
+        <div class="being_us_left">
+            <ul>
+            <li><h4>新志愿者协议</h4>
+                <p>加入新志愿者的人员必须遵守中华人民共和国的相关法律法规,并且本着平等资源的原则......</p>
+                <a href="ife.baidu.com"><img src="task_7_images/task_7_16_.png"/>more</a>
+            </li>
+            <li><h4>新志愿者权利</h4>
+                 <p>加入新志愿者享受内部所有资源共享的权利,并且享受在四新世界活动的优先参与资格......</p>
+                <a href="ife.baidu.com"><img src="task_7_images/task_7_16_.png"/>more</a>
+            </li>
+             <li><h4>更多条款</h4>
+                 <a href="ife.baidu.com"><img src="task_7_images/task_7_16_.png"/>more</a>
+              </li>
+            </ul>
+        </div>
+        <div class="being_us_right">
+            <form>
+                <input type="text" name="name" value="姓名:"/>
+                <input type="text" name="age" value="年龄:"/>
+                <input type="text" name="tel" value="联系方式:"/>
+                <input type="text" name="address" value="联系地址:"/>
+                <textarea name="life" placeholder="请简单描述您梦想的生活:">
+                </textarea>
+                <input type="submit" value="提交申请" id="submit"/>
+            </form>
+        </div>
+    </div><!--"being_us"end-->
+    <div class="contect">
+        <h3>联系我们</h3>
+        <p>为了更好的获取我们的产品资讯,您可以获取您的电子邮箱快速订阅我们的产品资讯,
+        也可以通过以下任何方式关注我们的动态</p>
+        <input type="text" name="email" value="someone@email.com"/>
+        <input type="submit" value="提交" id="contect_submit"/>
+        <img src="task_7_images/task_7_19.png"/>
+    </div><!--"contect"end-->
+    <div class="footer">
+        <span id="year">@2017新世界</span>
+        <span id="toTop">back to top</span>
+    </div><!--"footer"end-->
+</div><!--"top"end-->
+</body>
+</html>
